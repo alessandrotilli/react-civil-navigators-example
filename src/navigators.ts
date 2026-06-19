@@ -31,7 +31,6 @@ export class NavigatorsExample {
   constructor() {}
 
   dispose() {
-    console.log("dispose");
     this.components?.dispose();
     this.components = undefined;
   }

@@ -17,8 +17,6 @@ export default function App() {
     exampleRef.current.dispose();
   }, []);
 
-  console.log("loaded", loaded);
-
   return (
     <div className="App">
       <div className="toolbar">
