@@ -56,7 +56,7 @@ export class NavigatorsExample {
 
     world.scene.setup();
 
-    world.camera.controls.setLookAt(5, 5, 5, 0, 0, 0);
+    world.camera.controls.setLookAt(200, 100, 100, 0, 0, 0);
 
     container.appendChild(world.renderer.three2D.domElement);
 
