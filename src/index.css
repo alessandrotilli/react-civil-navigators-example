@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow: hidden;
+}
+
+.full-screen {
+  width: 100vw;
+  height: calc(100vh - 40px);
+  position: absolute;
+  overflow: hidden;
+  top: 40px;
+}
+
+.toolbar {
+  text-align: center;
+}
+
+.divider {
+  display: grid;
+  grid-template:
+    "horizontal viewer" auto
+    / 30rem auto;
+}
+
+.options-menu {
+  position: fixed;
+  min-width: unset;
+  top: 5px;
+  right: 5px;
+  height: fit-content;
+  max-height: calc(100vh - 10px);
+}
+
+.phone-menu-toggler {
+  visibility: hidden;
+}
+
+@media (max-width: 480px) {
+  .options-menu {
+    visibility: hidden;
+    bottom: 5px;
+    left: 5px;
+  }
+
+  .options-menu-visible {
+    visibility: visible;
+  }
+
+  .phone-menu-toggler {
+    visibility: visible;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+}
